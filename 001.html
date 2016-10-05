@@ -2,7 +2,7 @@
 <script type="text/processing" data-processing-target="mycanvas">
 
 // @pjs preload must be used to preload the image so that it will be available when used in the sketch  
-/* @pjs preload="data/dirt.jpg"; */
+/* @pjs preload="dirt.jpg"; */
 
 void setup() {
 
@@ -15,7 +15,7 @@ var code = Math.round(Math.random()*10000);
 var Beaver = function(x, y) {
     this.x = x;
     this.y = y;
-    this.img = loadImage("data/dirt.jpg");
+    this.img = loadImage("dirt.jpg");
     this.sticks = 0;
 };
 
@@ -26,12 +26,12 @@ Beaver.prototype.draw = function() {
 };
 
 Beaver.prototype.hop = function() {
-    this.img = loadImage("data/dirt.jpg");
+    this.img = loadImage("dirt.jpg");
     this.y -= 5;
 };
 
 Beaver.prototype.fall = function() {
-    this.img = loadImage("data/dirt.jpg");
+    this.img = loadImage("dirt.jpg");
     this.y += 5;
 };
 
